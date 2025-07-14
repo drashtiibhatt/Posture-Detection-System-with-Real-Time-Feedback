@@ -44,9 +44,10 @@ npm install
 ```
 PORT=5000
 MONGO_URI=<your-mongodb-connection-string>
-AUTH0_DOMAIN=dev-rj7mvx3uhfv1dlj0.us.auth0.com
-AUTH0_AUDIENCE=https://posturedetectionapi
+AUTH0_DOMAIN=YOUR_AUTH0_DOMAIN
+AUTH0_AUDIENCE=YOUR_AUTH0_AUDIENCE
 ```
+> **Note:** Replace `YOUR_AUTH0_DOMAIN` and `YOUR_AUTH0_AUDIENCE` with your actual Auth0 credentials.
 
 #### Start the backend server:
 ```sh
@@ -88,7 +89,7 @@ npm run dev
 
 ## Environment Variables
 - **Backend:** See above `.env` example.
-- **Frontend:** Auth0 config is hardcoded in `src/main.jsx`. For production, use environment variables or a config file.
+- **Frontend:** Auth0 config is set in `src/main.jsx` using placeholders. For production, use your real Auth0 credentials.
 - **Posture Detection:** No .env needed, but requires a webcam and Python 3.10+.
 
 ## Running the Project (All Together)
@@ -111,10 +112,10 @@ npm run dev
 
 ## Authentication (Auth0)
 - The app uses Auth0 for authentication. Config is in `src/main.jsx`:
-  - `domain`: `dev-rj7mvx3uhfv1dlj0.us.auth0.com`
-  - `clientId`: `W92hGMIE1W4uSWzNOUUJaJJFKRiR1MEG`
-  - `audience`: `https://posturedetectionapi`
-- You may need to set up your own Auth0 tenant for production.
+  - `domain`: `YOUR_AUTH0_DOMAIN`
+  - `clientId`: `YOUR_AUTH0_CLIENT_ID`
+  - `audience`: `YOUR_AUTH0_AUDIENCE`
+- You must set up your own Auth0 tenant and fill in these values for your deployment.
 
 ## Data Model (MongoDB Session)
 ```js
