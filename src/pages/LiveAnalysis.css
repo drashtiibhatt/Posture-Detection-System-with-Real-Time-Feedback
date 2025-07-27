@@ -1,0 +1,133 @@
+/* LiveAnalysis.css */
+
+.live-analysis-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .analysis-title {
+    color: #2563eb;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .control-panel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .control-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .start-button {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .start-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .stop-button {
+    background-color: #dc2626;
+    color: white;
+  }
+  
+  .stop-button:hover {
+    background-color: #b91c1c;
+  }
+  
+  .analysis-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .analysis-content {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+  
+  .video-container {
+    flex: 1;
+    max-width: 100%;
+  }
+  
+  .video-feed {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid #2563eb;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+  
+  .feedback-container {
+    flex: 1;
+    max-width: 100%;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-title {
+    color: #2563eb;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 10px;
+  }
+  
+  .feedback-list {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .feedback-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .good-posture {
+    border-left: 4px solid #22c55e;
+  }
+  
+  .bad-posture {
+    border-left: 4px solid #dc2626;
+  }
+  
+  .feedback-time {
+    font-weight: bold;
+    color: #64748b;
+  }
+  
+  .feedback-status {
+    font-weight: 500;
+  }
+  
+  .no-feedback {
+    color: #64748b;
+    text-align: center;
+    font-style: italic;
+    padding: 20px 0;
+  }
