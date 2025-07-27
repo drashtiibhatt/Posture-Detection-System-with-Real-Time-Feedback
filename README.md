@@ -170,6 +170,3 @@ A: Remove the large files from git tracking (see above), update `.gitignore`, an
 
 **Q: How do I set up Auth0 for my own deployment?**
 A: Create an Auth0 tenant, configure an application, and update the domain, clientId, and audience in your frontend and backend configs.
-
-## License
-MIT (or specify your license)
